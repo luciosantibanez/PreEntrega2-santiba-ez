@@ -3,15 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-} */
+html{
+    height: 100%;
+}
 
 body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.9)), url("../img/hero.jpg");
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     background-position: center;
     background-size: cover;
+    font-family: 'Poppins', sans-serif;
 }
 
 header{
@@ -22,7 +25,7 @@ header{
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
 }
 
-.container{
+.container1{
     max-width: 1200px;
     min-height: 85px;
     display: flex;
@@ -31,32 +34,65 @@ header{
     align-items: center;
 }
 
+/* media query */
+
 @media (max-width:768px){
-    .container{
+    .container1{
         flex-direction: column;
-       justify-content:normal;
-        
+       /* justify-content:normal; */
     }
 
-    .logo{
-        
+    .logo h2{
+        font-size: 24px;
+        margin-top: 15px;
     }
 
+    .logo i{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .nav a{
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    section .textHero h2{ 
+        font-size: 40px;
+    }
+    
+    footer .redes img{
+        height: 28px;
+        width: 28px;
+        margin-left: 10px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    footer .final{
+        justify-content: center;
+    
+    }
 }
-
-
-
 
 /* logo izquierda */
 
 .logo{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 1000;
+    display: flex;
+}
+
+.logo h2{
+    margin-left: 2px;
+
 }
 
 .logo span{
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 7px rgb(0, 0, 0);
+    color: rgb(1, 195, 243);
+    text-shadow: 1px 1px 10px rgb(1, 195, 243);
     font-weight: 100;
 }
 
@@ -79,57 +115,58 @@ nav a:hover{
 /* img hero */
 
 section{
-    height: 100vh;
+    height: 100%;
     width: 100%;
-}
-
-section .textHero{
-    color: white;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    height: 70%;
-    width: 100%;
 }
 
-.textHero h1, h3{ 
-    font-size: 60px;
+section .textHero{
+    color: white;
+    margin-top: 100px;
 }
 
-.textHero h4{ 
-    font-weight: 100;
+.textHero h1{ 
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.textHero h2{ 
+    font-size: 50px;
+}
+
+.texHero h1, h2{
+    cursor:default;
 }
 
 .redes{
     padding-top: 15px;
     padding-right: 20px;
 }
+
 .redes a{
     padding-right: 10px;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 
 .redes img{
     width: 32px;
-    height: 32px;    
+    height: 32px;   
+    margin-left: 10px; 
 }
 
 footer{
     background-color: #000000;  
     height: 70px;
-    
-
+    margin-top: auto;
 }
 
 footer p{
-    
     color: white;
-    
     margin-left: 20px;
     height: 20px;
-  
 }
 
 .final{
@@ -137,8 +174,6 @@ footer p{
     margin: auto;
     display: flex;
     justify-content: space-between;
-
-    
 }
 
 footer p span{
