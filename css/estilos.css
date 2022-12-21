@@ -16,7 +16,7 @@ body{
 
 header{
     width: 100%;
-    height: 70px;
+    min-height: 85px;
     background-color: #ffffff10;
     color: rgb(255, 255, 255);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
@@ -24,24 +24,33 @@ header{
 
 .container{
     max-width: 1200px;
-    height: 70px;
+    min-height: 85px;
     display: flex;
     justify-content: space-between;
     margin: auto; 
     align-items: center;
 }
 
-/* @media screen and (min-width: 700px) {
-    nav a:hover{
-        color:red
+@media (max-width:768px){
+    .container{
+        flex-direction: column;
+       justify-content:normal;
         
-     }  
-} */
+    }
+
+    .logo{
+        
+    }
+
+}
+
+
+
 
 /* logo izquierda */
 
 .logo{
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 1000;
 }
 
@@ -70,8 +79,6 @@ nav a:hover{
 /* img hero */
 
 section{
-    
-    
     height: 100vh;
     width: 100%;
 }
