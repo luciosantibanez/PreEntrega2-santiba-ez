@@ -8,7 +8,7 @@ html{
 }
 
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/hero2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/hero.jpg");
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ body{
 
 header{
     width: 100%;
-    min-height: 85px;
+    min-height: 70px;
     background-color: #ffffff10;
     color: rgb(255, 255, 255);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
@@ -27,7 +27,7 @@ header{
 
 .container1{
     max-width: 1200px;
-    min-height: 85px;
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     margin: auto; 
@@ -126,7 +126,24 @@ section{
 section .textHero{
     color: white;
     margin-top: 200px;
+
 }
+::-webkit-scrollbar {
+    display: none;
+  }  
+@keyframes slidein {
+    0% {
+      margin-left: 100%;
+      width: 100%;
+      color: transparent;
+      
+    }
+
+    100% {
+      margin-left: 0%;
+      width: 1000%;
+    }
+  }
 
 .textHero h1{ 
     font-size: 40px;
@@ -134,8 +151,15 @@ section .textHero{
 }
 
 .textHero h2{ 
-    font-size: 50px;
-    font-weight: 200;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.textHero h2{
+    animation-duration: 3s;
+    animation-name: slidein;
+    /* animation-iteration-count: infinite; */
+    animation-direction: alternate;
 }
 
 a i{
@@ -169,10 +193,16 @@ a i:hover{
     width: 28px;
     height: 28px;   
     margin-left: 10px; 
+    border-radius: 50px;
+}
+
+.redes img:hover{
+    transform: scale(1.04);
+    
 }
 
 footer{
-    background-color: #000000;  
+    background-color: #030303c4;  
     height: 50px;
     margin-top: auto;
 }
