@@ -109,6 +109,11 @@ section .textHero{
 .textHero h1{ 
     font-size: 40px;
     font-weight: 1000;
+    animation: engordar 5.5s;
+
+    /* animation-duration: 3s;
+    animation-name: textHero;
+    animation-direction: alternate; */
 }
 
 .textHero h2{ 
@@ -127,13 +132,24 @@ a i{
 }
 
 a i:hover{
-    transform: skew(-10deg)scale(1.1);
+    transform: skew(-5deg)scale(1.1);
     transition: 0.5s;
 }
 
 
-.texHero h1, h2{
+.textHero h1, h2{
     cursor:default;
+}
+
+@keyframes engordar {
+    0%{
+        color: transparent;
+
+    }
+    100%{
+        
+    }
+    
 }
 
 /* footer */

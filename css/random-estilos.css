@@ -75,10 +75,30 @@ nav a:hover{
     font-weight: 600;
 }
 
+/* main */
+
 section{
     height: 100vh;
     width: 100%;
-   
+    color:#ffffff
+}
+
+.container img{
+    height: 70px;
+}
+
+section a{
+    height: 90px !important;
+    width: 100px !important;
+    align-self: center;
+    align-items: center;
+}
+section a .uncu{
+    width: 100px;
+}
+
+section a:hover{
+    transform: scale(1.01);
 }
 
 
