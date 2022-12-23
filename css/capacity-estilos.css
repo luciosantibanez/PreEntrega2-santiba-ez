@@ -4,24 +4,60 @@
     box-sizing: border-box;
 }
 
-body{
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color: #3E5151;
+html{
+    height: 100%;
 }
 
-header.headerPrincipal{
+body{
+    font-family: 'Poppins', sans-serif;
+    /* min-height: 100%; */
+}
+
+header{
     width: 100%;
-    height: 70px;
-    background-color: #3E5151;
-    color: white;
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45); 
+    min-height: 70px;
+    background-color: rgb(37 37 37);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
+}
+
+.textos-header{
+    background-color: rgb(22, 22, 22);
+    height: 100vh;
+    position: relative;
+}
+
+.sobre-nosotros{
+    background-color: rgb(243, 233, 250);
+    height: 50vh;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+.container1{
+    max-width: 1200px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; 
+    align-items: center;
 }
 
 .logo{
-    float: left;
     font-size: 24px;
-    font-weight: bold;
-    margin-top: 9px;
+    font-weight: 1000;
+    display: flex;
 }
 
 .logo a{
@@ -29,103 +65,98 @@ header.headerPrincipal{
     color:#ffffff
 }
 
+
+header a{
+    text-decoration: none;
+    color:#ffffff;
+    
+}
+
+.nav span a{
+    color:aqua;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.1s;
+    font-weight: 400;
+    cursor: default;
+
+}
+
 .logo span{
-    color: #DECBA4;
+    color: aqua;
     text-shadow: 0 0 7px rgb(0, 0, 0);
     font-weight: 100;
 }
 
-.container{
-   max-width: 1200px;
-   margin: auto; 
-}
-
 nav a{
-    float: right; 
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding-top: 24px;
-    padding-right: 12px;
     font-size: 20px;
     font-weight: 100;
+    margin-left: 10px;
 }
 
 nav a:hover{
-    color: #DECBA4;
-}
-
-ul{
-    padding-left: 25px;
-}
-
-.background h3{
-    font-size: 30px;
-    font-weight: 100;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.721);
-}
-
-.skills{
-    margin-right: 49%;
-    margin-top: 6%;
-    color: white;
-    float:right
-}
-
-.courses{
-    margin-left: 23%;
-    margin-top: 6%;
-    color: white;
-    float: left;
-}
-
-#imgSkills{
-    margin-left: 60%;
-    
-}
-img{
-    width: 340px;
-    height: 300px;
-}
-
-.redes{
-    padding-top: 15px;
-    padding-right: 20px;   
-}
-
-.redes a{
-    padding-right: 10px;
+    color:aqua;
     text-decoration: none;
-    margin-left: 25px;   
+    transform: scale(1.05);
+    transition: 0.1s;
+    font-weight: 400;
+}
+ 
+::-webkit-scrollbar{
+    width: 12px;
 }
 
-.redes img{
-    width: 32px;
-    height: 32px;  
+::-webkit-scrollbar-track{
+    background-color: #ffffff00;
 }
 
-footer{
-    background-color: #3E5151;
-    position: absolute;
-    bottom: 0;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.302);
-    width: 100%;
-    display: flex; 
+::-webkit-scrollbar-thumb{
+    background-color: #b1b1b18f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
 }
 
-#footer p{
-    color: white;
-    margin-left: 20px;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-}
+@media (max-width:768px){
+    .container1{
+        flex-direction: column;
+       /* justify-content:normal; */
+    }
 
-.final{
-    max-width: 1200px;
-    margin: auto; 
-}
+    .logo h2{
+        font-size: 24px;
+        margin-top: 15px;
+    }
 
-footer p span{
-    font-size: 30px;
+    .logo i{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .nav a{
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    section .textHero h2{ 
+        font-size: 40px;
+    }
     
+    footer .redes img{
+        height: 28px;
+        width: 28px;
+        margin-left: 10px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    footer .final{
+        justify-content: center;
+    
+    }
 }
