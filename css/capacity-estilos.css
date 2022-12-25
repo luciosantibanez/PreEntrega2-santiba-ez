@@ -23,18 +23,43 @@ header{
 
 .contenedorArriba{
     background-color: rgb(22, 22, 22);
-    height: 80vh;
-    position: relative; 
+    height: 60vh;
+    position: relative;
+    color: white;
+    
+}
+.textoArriba h2{
+     font-size: 40px;
+     font-weight: 800;
+     
+}
+
+li{
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.textoArriba ul{
+    list-style: none;
+}
+
+.textoArriba{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 40px;
 }
 
 .contenedorAbajo{
     background-color: rgb(243, 233, 250);
-    height: 45vh;
-    
+    height: 40vh;
     flex-direction: column;
     display: flex;
     align-items: center;
-   position: relative;
+    position: relative;
 }
 
 .img{
@@ -195,6 +220,7 @@ footer p span{
         display: grid;
         grid-template-columns: 100px 100px 100px;
         gap:20px;
+        padding-bottom: 60px;
         
     }
     
@@ -203,8 +229,9 @@ footer p span{
         width: 100px;
     }
 
-
-
+    .contenedorAbajo{
+        min-height: 50vh;
+    }
 }
 
 @media (max-width:768px){
