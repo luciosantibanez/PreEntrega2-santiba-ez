@@ -4,15 +4,13 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
-}
-
 body{
     background-color: rgb(22, 22, 22);
     font-family: 'Poppins', sans-serif;
     min-height: 100%;
 }
+
+/* header */
 
 header{
     width: 100%;
@@ -55,7 +53,6 @@ header{
 
 .logo span{
     color: aqua;
-    text-shadow: 0 0 7px rgb(0, 0, 0);
     font-weight: 100;
 }
 
@@ -74,6 +71,8 @@ nav a:hover{
     transition: 0.1s;
     font-weight: 400;
 }
+
+/* fin header */
 
 /* main */
 
@@ -101,7 +100,6 @@ section a:hover{
     transform: scale(1.01);
 }
 
-
 /* footer */
 
 .redes{
@@ -123,13 +121,15 @@ section a:hover{
 
 .redes img:hover{
     transform: scale(1.04);
-    
 }
 
 footer{
     background-color: #030303c4;  
     height: 50px;
+    width: 100%;
     margin-top: auto;
+    position: fixed;
+    bottom: 0;
 }
 
 footer p{
@@ -151,12 +151,13 @@ footer p span{
     font-size: 30px;
     
 }
+
+/* fin footer */
 /* media querys */
 
 @media (max-width:768px){
     .container1{
         flex-direction: column;
-       /* justify-content:normal; */
     }
 
     .logo h2{

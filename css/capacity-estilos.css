@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
-}
-
 body{
     font-family: 'Poppins', sans-serif;
     height: 100%;
@@ -19,67 +15,6 @@ header{
     background-color: rgb(37 37 37);
     color: rgb(255, 255, 255);
     box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
-}
-
-.contenedorArriba{
-    background-color: rgb(22, 22, 22);
-    height: 60vh;
-    position: relative;
-    color: white;
-    
-}
-.textoArriba h2{
-     font-size: 40px;
-     font-weight: 800;
-     
-}
-
-li{
-    margin-top: 10px;
-    padding: 0 10px 0 10px;
-}
-
-.textoArriba ul{
-    list-style: none;
-}
-
-.textoArriba{
-    display: flex;
-    justify-content: center;
-    height: 60vh;
-    flex-direction: column;
-    align-items: center;
-    list-style: none;
-    padding-bottom: 40px;
-}
-
-.contenedorAbajo{
-    background-color: rgb(243, 233, 250);
-    height: 40vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    position: relative;
-}
-
-.img{
-    height: 10px;
-    width: 10px;
-}
-
-.wave{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 200px;
-}
-
-.titulo{
-    /* display: flex;
-    justify-content: center; */
-    font-weight: 800;
-    font-size: 40px;
-    margin-top: 10px;
 }
 
 .container1{
@@ -102,11 +37,9 @@ li{
     color:#ffffff
 }
 
-
 header a{
     text-decoration: none;
     color:#ffffff;
-    
 }
 
 .nav span a{
@@ -116,12 +49,10 @@ header a{
     transition: 0.1s;
     font-weight: 400;
     cursor: default;
-
 }
 
 .logo span{
     color: aqua;
-    text-shadow: 0 0 7px rgb(0, 0, 0);
     font-weight: 100;
 }
 
@@ -144,20 +75,58 @@ nav a:hover{
 /* fin header */
 
 
- 
-::-webkit-scrollbar{
-    width: 12px;
-}
-
-::-webkit-scrollbar-track{
+.contenedorArriba{
     background-color: rgb(22, 22, 22);
+    height: 60vh;
+    position: relative;
+    color: white;
+}
+.textoArriba h2{
+    font-size: 40px;
+    font-weight: 800;    
 }
 
-::-webkit-scrollbar-thumb{
-    background-color: #b1b1b18f;
-    width: 10px;
-    height: 10px;
-    border-radius: 50px;
+li{
+    margin-top: 10px;
+    padding: 0 10px 0 10px;
+}
+
+.textoArriba ul{
+    list-style: none;
+}
+
+.textoArriba{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    padding-bottom: 40px;
+}
+
+/* efecto wave */
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+}
+
+.contenedorAbajo{
+    background-color: rgb(243, 233, 250);
+    height: 40vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.tituloAbajo{
+    font-weight: 800;
+    font-size: 40px;
+    margin-top: 10px;
 }
 
 /* footer */
@@ -181,7 +150,6 @@ nav a:hover{
 
 .redes img:hover{
     transform: scale(1.04);
-    
 }
 
 footer{
@@ -215,6 +183,23 @@ footer p span{
 
 /* fin footer */
 
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(22, 22, 22);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b1b1b18f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
+/* media querys */
+
 @media (max-width:900px){
     .imgSkills{
         display: grid;
@@ -230,14 +215,13 @@ footer p span{
     }
 
     .contenedorAbajo{
-        min-height: 50vh;
+        min-height: 60vh;
     }
 }
 
 @media (max-width:768px){
     .container1{
         flex-direction: column;
-       /* justify-content:normal; */
     }
 
     .logo h2{
