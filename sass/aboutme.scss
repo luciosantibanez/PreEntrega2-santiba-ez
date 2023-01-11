@@ -1,0 +1,213 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100%;
+}
+
+/* header */
+
+header{
+    width: 100%;
+    min-height: 70px;
+    background-color: #ffffff10;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
+}
+
+.container1{
+    max-width: 1200px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto; 
+    align-items: center;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: 1000;
+    display: flex;
+}
+
+
+.logo a{
+    text-decoration: none;
+    color:#ffffff
+}
+
+.nav span a{
+    color:aqua;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.1s;
+    font-weight: 400;
+    cursor: default;
+
+}
+
+.logo span{
+    color: #00ffff;
+    font-weight: 100;
+}
+
+nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: 100;
+    margin-left: 10px;
+}
+
+nav a:hover{
+    color:aqua;
+    text-decoration: none;
+    transform: scale(1.05);
+    transition: 0.1s;
+    font-weight: 400;
+}
+
+/* fin header */
+
+/* main */
+
+section{
+    height: 100vh;
+    width: 100%;
+    color:#ffffff
+}
+
+.container img{
+    height: 70px;
+}
+
+section a{
+    height: 90px !important;
+    width: 100px !important;
+    align-self: center;
+    align-items: center;
+}
+section a .uncu{
+    width: 100px;
+}
+
+section a:hover{
+    transform: scale(1.01);
+}
+
+/* footer */
+
+.redes{
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+.redes a{
+    padding-right: 10px;
+    text-decoration: none;   
+}
+
+.redes img{
+    width: 28px;
+    height: 28px;   
+    margin-left: 10px; 
+    border-radius: 50px;
+}
+
+.redes img:hover{
+    transform: scale(1.04);
+}
+
+footer{
+    background-color: #030303c4;  
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p{
+    color: white;
+    margin-left: 20px;
+    height: 20px;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+.final{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p span{
+    font-size: 30px;
+    
+}
+
+/* fin footer */
+/* media querys */
+
+@media (max-width:768px){
+    .container1{
+        flex-direction: column;
+    }
+
+    .logo h2{
+        font-size: 24px;
+        margin-top: 15px;
+    }
+
+    .logo i{
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .nav a{
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    section .textHero h2{ 
+        font-size: 40px;
+    }
+    
+    footer .redes img{
+        height: 28px;
+        width: 28px;
+        margin-left: 10px;
+    }
+
+    footer p{
+        font-size: 14px;
+    }
+
+    footer .final{
+        justify-content: center;
+    
+    }
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #b1b1b18f;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+}
+
