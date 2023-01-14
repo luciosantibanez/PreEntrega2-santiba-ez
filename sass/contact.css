@@ -10,16 +10,14 @@ body {
   min-height: 100%;
 }
 
-/* header */
 header {
   width: 100%;
   min-height: 70px;
-  background-color: rgba(255, 255, 255, 0.062745098);
+  background-color: rgb(37, 37, 37);
   color: rgb(255, 255, 255);
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);
 }
-
-.container1 {
+header .container1 {
   max-width: 1200px;
   min-height: 70px;
   display: flex;
@@ -27,33 +25,30 @@ header {
   margin: auto;
   align-items: center;
 }
-
-.logo {
+header .container1 .logo {
   font-size: 24px;
   font-weight: 1000;
   display: flex;
 }
-
-.logo a {
+header .container1 .logo a {
   text-decoration: none;
-  color: #ffffff;
 }
-
-.nav span a {
-  color: #00ffff;
-  text-decoration: none;
-  transform: scale(1.05);
-  transition: 0.1s;
-  font-weight: 400;
-  cursor: default;
+header .container1 .logo a h2 {
+  margin-left: 2px;
+  color: white;
 }
-
-.logo span {
+header .container1 .logo a span {
   color: #00ffff;
   font-weight: 100;
 }
-
-nav a {
+header .container1 nav span a {
+  color: #00ffff;
+  text-decoration: none;
+  transform: scale(1.05);
+  font-weight: 400;
+  cursor: default;
+}
+header .container1 nav a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -61,43 +56,45 @@ nav a {
   margin-left: 10px;
 }
 
-nav a:hover {
+.nav a:hover {
   color: #00ffff;
   text-decoration: none;
-  transform: scale(1.05);
-  transition: 0.1s;
   font-weight: 400;
-}
-
-/* footer */
-.redes {
-  padding-top: 15px;
-  padding-right: 20px;
-}
-.redes a {
-  padding-right: 10px;
-  text-decoration: none;
-}
-.redes a img {
-  width: 28px;
-  height: 28px;
-  margin-left: 10px;
-  border-radius: 50px;
 }
 
 a img:hover {
   transform: scale(1.04);
 }
 
+/* footer */
 footer {
-  background-color: rgba(3, 3, 3, 0.768627451);
   height: 50px;
   width: 100%;
   margin-top: auto;
+  background-color: rgb(37, 37, 37);
   position: fixed;
   bottom: 0;
 }
-
+footer .final {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .final .redes {
+  padding-top: 15px;
+  padding-right: 20px;
+}
+footer .final .redes a {
+  padding-right: 10px;
+  text-decoration: none;
+}
+footer .final .redes a img {
+  width: 28px;
+  height: 28px;
+  margin-left: 10px;
+  border-radius: 50px;
+}
 footer p {
   color: white;
   margin-left: 20px;
@@ -105,14 +102,6 @@ footer p {
   font-weight: 100;
   font-size: 15px;
 }
-
-.final {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 footer p span {
   font-size: 30px;
 }/*# sourceMappingURL=contact.css.map */

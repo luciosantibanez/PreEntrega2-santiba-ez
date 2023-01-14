@@ -10,16 +10,14 @@ body {
   min-height: 100%;
 }
 
-/* header */
 header {
   width: 100%;
   min-height: 70px;
-  background-color: rgba(255, 255, 255, 0.062745098);
+  background-color: #252525;
   color: rgb(255, 255, 255);
   box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);
 }
-
-.container1 {
+header .container1 {
   max-width: 1200px;
   min-height: 70px;
   display: flex;
@@ -27,33 +25,30 @@ header {
   margin: auto;
   align-items: center;
 }
-
-.logo {
+header .container1 .logo {
   font-size: 24px;
   font-weight: 1000;
   display: flex;
 }
-
-.logo a {
+header .container1 .logo a {
   text-decoration: none;
-  color: #ffffff;
 }
-
-.nav span a {
-  color: #00ffff;
-  text-decoration: none;
-  transform: scale(1.05);
-  transition: 0.1s;
-  font-weight: 400;
-  cursor: default;
+header .container1 .logo a h2 {
+  margin-left: 2px;
+  color: white;
 }
-
-.logo span {
+header .container1 .logo a span {
   color: #00ffff;
   font-weight: 100;
 }
-
-nav a {
+header .container1 nav span a {
+  color: #00ffff;
+  text-decoration: none;
+  transform: scale(1.05);
+  font-weight: 400;
+  cursor: default;
+}
+header .container1 nav a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   font-size: 20px;
@@ -61,47 +56,144 @@ nav a {
   margin-left: 10px;
 }
 
-nav a:hover {
+.nav a:hover {
   color: #00ffff;
   text-decoration: none;
-  transform: scale(1.05);
-  transition: 0.1s;
   font-weight: 400;
+}
+
+.containers {
+  width: 100%;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  font-family: monospace;
+  color: white;
+}
+
+.card {
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+  border-radius: 6px;
+  border: none;
+  overflow: hidden;
+  background-color: #252525;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  transition: all 400ms ease;
+}
+
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  transform: translateY(-3%);
+}
+
+.portfolio {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img/portfolio.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.durocret {
+  width: 100%;
+  height: 500px;
+  background-image: url(../img//hero\ y\ header.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.cv {
+  background-image: url(../img/cv\ lucio\ img.png);
+  background-position: top;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+}
+
+.card .contenido {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card .contenido a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  transition: all 400ms ease;
+}
+
+.card .duro h3 {
+  font-family: "Anton", sans-serif;
+}
+
+.card .port h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.card .port h3 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #00ffff;
+}
+
+.card .mycv h3 {
+  font-family: "Fredoka One", cursive;
+  color: rgb(223, 192, 152);
+}
+
+.card .contenido a i:hover {
+  color: #00ffff;
+  transition: 0.2s;
+  transform: scale(1.1);
 }
 
 a img {
   height: 10%;
-  width: 10%;
+  width: 15%;
 }
+
+a img:hover {
+  transform: scale(1.03);
+  cursor: default;
+  transition: 0.4s;
+}
+
 /* footer */
-.redes {
+footer {
+  height: 50px;
+  width: 100%;
+  background-color: #252525;
+  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+}
+footer .final {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+footer .final .redes {
   padding-top: 15px;
   padding-right: 20px;
 }
-.redes a {
+footer .final .redes a {
   padding-right: 10px;
   text-decoration: none;
 }
-.redes a img {
+footer .final .redes a img {
   width: 28px;
   height: 28px;
   margin-left: 10px;
   border-radius: 50px;
 }
-
-a img:hover {
-  transform: scale(1.04);
-}
-
-footer {
-  background-color: rgba(3, 3, 3, 0.768627451);
-  height: 50px;
-  width: 100%;
-  margin-top: auto;
-  position: fixed;
-  bottom: 0;
-}
-
 footer p {
   color: white;
   margin-left: 20px;
@@ -109,14 +201,40 @@ footer p {
   font-weight: 100;
   font-size: 15px;
 }
-
-.final {
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 footer p span {
   font-size: 30px;
+}
+
+/* media querys */
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .logo h2 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .logo i {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .nav a {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+  }
+  section .textHero h2 {
+    font-size: 40px;
+  }
+  footer .redes img {
+    height: 28px;
+    width: 28px;
+    margin-left: 10px;
+  }
+  footer p {
+    font-size: 14px;
+  }
+  footer .final {
+    justify-content: center;
+  }
 }/*# sourceMappingURL=portfolio.css.map */

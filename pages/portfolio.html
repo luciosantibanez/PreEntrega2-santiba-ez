@@ -7,11 +7,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">  
     <script src="https://kit.fontawesome.com/e0d097bbd8.js" crossorigin="anonymous"></script>
     <link rel="icon" href="../img/favicon-16x16.png">
     <link rel="stylesheet" href="../sass/portfolio.css">
-    <title>Hobbies</title>
+    <title>Portfolio</title>
 </head>
 <body>
     <header class="headerPrincipal">
@@ -20,23 +22,47 @@
                 <i class="fa-solid fa-user-graduate"></i>
                 <a href="../index.html"><h2>Port<span>Folio</span></h2></a>
             </div>
-        <nav>
-            <a href="./aboutme.html">About Me</a>
-            <a href="./capacity.html">Capacitys</a>
-            <span><a href="">Portfolio</a></span>
-            <a href="./contact.html">Contact</a>
-        </nav>
+            <div class="nav">
+                <nav>
+                    <a href="./aboutme.html">About Me</a>
+                    <a href="./capacity.html">Capacitys</a>
+                    <span><a href="">Portfolio</a></span>
+                    <a href="./contact.html">Contact</a>
+                </nav>
+            </div>
         </div>
     </header>
-
-    <div class="contenedor">
-        <a href="../img/CV LUCIO ULTIMO (1).pdf.pdf (4).pdf">
-            <img src="../img/CV LUCIO ULTIMO - Copy.png" alt="">
-            <button>
-            DESCARGA MI CV
-            </button>
-        </a>
-        
+    
+    <div class="containers">
+            <div class="card">
+                <figure class="portfolio"></figure>
+                <div class="contenido port"> 
+                    <h3>Port<span>Folio</span></h3>
+                    
+                    <a target="_blank" href=""><i class="fa-solid fa-link"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="durocret"></figure>
+                <div class="contenido duro"> 
+                    <h3>DUROCRET S.A</h3>
+                    
+                    <a target="_blank" href=""><i class="fa-solid fa-link"></i></a>
+                    <a target="_blank" href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="card">
+                <figure class="cv"></figure>
+                <div class="contenido mycv"> 
+                    <h3>MY CV</h3>
+                    
+                    <a target="_blank" href="../img/cv lucio.pdf"><i class="fa-solid fa-eye"></i></a>
+                    <a target="_blank" download="Cv Lucio Santibañez.pdf" href="../img/cv lucio.pdf"><i class="fa-solid fa-circle-down"></i></a>
+                </div>
+            </div>
+    
+        </div>
     </div>
 
     <footer id="footer">

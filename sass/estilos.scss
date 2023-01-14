@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+$frcolor:#fdfdfd;
+$footcolor:#ffffff10;
+$thcolor: #00ffff;
+
+$fontgral: 'Poppins', sans-serif;
+
 html{
     height: 100%;
 }
@@ -23,56 +29,56 @@ body{
 header{
     width: 100%;
     min-height: 70px;
-    background-color: #ffffff10;
-    color: rgb(255, 255, 255);
-    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);   
+    background-color: $footcolor;
+    color: $frcolor;
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.45);  
+
+    .container1{
+        max-width: 1200px;
+        min-height: 70px;
+        display: flex;
+        justify-content: space-between;
+        margin: auto; 
+        align-items: center;
+
+        //logo left
+
+        .logo{
+            font-size: 24px;
+            font-weight: 1000;
+            display: flex;
+
+            h2{
+                margin-left: 2px;
+            }
+            
+            span{
+                color: $thcolor;
+                font-weight: 100;
+            }
+        }
+
+        // nav right 
+
+        .nav{
+            a{
+                text-decoration: none;
+                color: $frcolor;
+                font-size: 20px;
+                font-weight: 100;
+                margin-left: 10px;
+            }
+        }
+    }
 }
 
-.container1{
-    max-width: 1200px;
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    margin: auto; 
-    align-items: center;
-}
-
-/* logo izquierda */
-
-.logo{
-    font-size: 24px;
-    font-weight: 1000;
-    display: flex;
-}
-
-.logo h2{
-    margin-left: 2px;
-}
-
-.logo span{
-    color: aqua;
-    font-weight: 100;
-}
-
-/* navegadores derecha */
-
-nav a{
+.nav a:hover{
+    color:$thcolor;
     text-decoration: none;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 100;
-    margin-left: 10px;
+    font-weight: 400;
 }
 
-nav a:hover{
-    color:aqua;
-    text-decoration: none;
-    transform: scale(1.05);
-    transition: 0.1s;
-    font-weight: 600;
-}
-
-/* fin header */
+//fin navbar
 
 /* img hero */
 
@@ -83,59 +89,58 @@ section{
     align-items: center;
     flex-direction: column;
     justify-content: center;
-}
 
-section .textHero{
-    color: white;
-    margin-top: 10%;
+    .textHero{
+        color: $frcolor;
+        margin-top: 10%;
+
+        h1{ 
+            font-size: 40px;
+            font-weight: 1000;
+            animation: engordar 5s;
+            cursor:default;
+
+            a i{
+                text-decoration: none;
+                color:$thcolor;
+                margin-left: 10px;
+                font-size: 46px;
+            }
+        }
+
+        h2{ 
+            font-size: 60px;
+            font-weight: 100;
+            animation-duration: 3s;
+            animation-name: textHero;
+            animation-direction: alternate;
+            cursor:default;
+        }
+    }
 }
 
 ::-webkit-scrollbar {
     display: none;
-  }  
+}  
+
+  //animation
 
 @keyframes textHero {
     0% {
-      margin-left: 100%;
-      width: 100%;
-      color: transparent;
-      
+    margin-left: 100%;
+    width: 100%;
+    color: transparent;
     }
 
     100% {
-      margin-left: 0%;
-      width: 1000%;
+    margin-left: 0%;
+    width: 1000%;
     }
-  }
-
-.textHero h1{ 
-    font-size: 40px;
-    font-weight: 1000;
-    animation: engordar 5.5s;
-}
-
-.textHero h2{ 
-    font-size: 60px;
-    font-weight: 100;
-    animation-duration: 3s;
-    animation-name: textHero;
-    animation-direction: alternate;
-}
-
-a i{
-    text-decoration: none;
-    color:aqua;
-    margin-left: 10px;
-    font-size: 46px;
 }
 
 a i:hover{
-    transform: skew(-5deg)scale(1.1);
+    transform: skew(-1deg)scale(1.05);
     transition: 0.5s;
-}
-
-.textHero h1, h2{
-    cursor:default;
 }
 
 @keyframes engordar {
@@ -145,78 +150,75 @@ a i:hover{
     }
 }
 
-/* fin hero-main */
+//fin hero-main
 
-/* footer */
-
-.redes{
-    padding-top: 15px;
-    padding-right: 20px;
-}
-
-.redes a{
-    padding-right: 10px;
-    text-decoration: none;   
-}
-
-.redes img{
-    width: 28px;
-    height: 28px;   
-    margin-left: 10px; 
-    border-radius: 50px;
-}
-
-.redes img:hover{
-    transform: scale(1.04);
-}
+//footer
 
 footer{
-    background-color: #030303c4;  
     height: 50px;
     width: 100%;
     margin-top: auto;
+    background-color: $footcolor;
     position: fixed;
     bottom: 0;
+
+    .final{
+        max-width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+
+        .redes{
+            padding-top: 15px;
+            padding-right: 20px;
+        
+            a{
+                padding-right: 10px;
+                text-decoration: none;   
+        
+                img{
+                width: 28px;
+                height: 28px;
+                margin-left: 10px;
+                border-radius: 50px;
+                }
+            }
+        }
+    }
+
+    p{
+        color: $frcolor;
+        margin-left: 20px;
+        height: 20px;
+        font-weight: 100;
+        font-size: 15px;
+
+        span{
+            font-size: 30px;
+        }
+        
+    }
 }
 
-footer p{
-    color: white;
-    margin-left: 20px;
-    height: 20px;
-    font-weight: 100;
-    font-size: 15px;
-}
-
-.final{
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer p span{
-    font-size: 30px;
-    
-}
-
-/* fin footer */
-/* media query */
+//fin footer
+// media query
 
 @media (max-width:768px){
     .container1{
         flex-direction: column;
-    }
 
-    .logo h2{
-        font-size: 24px;
-        margin-top: 15px;
+            .logo{
+                h2{
+                    font-size: 24px;
+                margin-top: 15px;
+                }
+                
+                i{
+                    font-size: 18px;
+                    margin-top: 10px;
+                }
+            }
     }
-
-    .logo i{
-        font-size: 18px;
-        margin-top: 10px;
-    }
-
     .nav a{
         font-size: 18px;
         margin-bottom: 15px;
@@ -227,18 +229,23 @@ footer p span{
         font-size: 40px;
     }
     
-    footer .redes img{
-        height: 28px;
-        width: 28px;
-        margin-left: 10px;
-    }
+    footer{
 
-    footer p{
-        font-size: 14px;
-    }
+        .final{
+            justify-content: center;
 
-    footer .final{
-        justify-content: center;
-    
+            .redes{
+
+                img{
+                    height: 28px;
+                    width: 28px;
+                    margin-left: 10px;
+                }
+            }
+            footer p{
+                font-size: 14px;
+            }
+
+        }
     }
 }
