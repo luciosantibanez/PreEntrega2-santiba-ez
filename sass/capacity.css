@@ -67,22 +67,7 @@ header .container1 nav a {
   position: relative;
   color: white;
 }
-
-.textoArriba h2 {
-  font-size: 40px;
-  font-weight: 800;
-}
-
-li {
-  margin-top: 10px;
-  padding: 0 10px 0 10px;
-}
-
-.textoArriba ul {
-  list-style: none;
-}
-
-.textoArriba {
+.contenedorArriba .textoArriba {
   display: flex;
   justify-content: center;
   height: 60vh;
@@ -91,8 +76,18 @@ li {
   list-style: none;
   padding-bottom: 100px;
 }
+.contenedorArriba .textoArriba h2 {
+  font-size: 40px;
+  font-weight: 800;
+}
+.contenedorArriba .textoArriba ul {
+  list-style: none;
+}
+.contenedorArriba .textoArriba li {
+  margin-top: 10px;
+  padding: 0 10px 0 10px;
+}
 
-/* efecto wave */
 .wave {
   position: absolute;
   bottom: 0;
@@ -108,14 +103,12 @@ li {
   align-items: center;
   position: relative;
 }
-
-.tituloAbajo {
+.contenedorAbajo .tituloAbajo {
   font-weight: 800;
   font-size: 40px;
   margin-top: 10px;
 }
 
-/* footer */
 footer {
   height: 50px;
   width: 100%;
@@ -194,31 +187,41 @@ a img:hover {
   .container1 {
     flex-direction: column;
   }
-  .logo h2 {
+  .container1 .logo h2 {
     font-size: 24px;
     margin-top: 15px;
   }
-  .logo i {
+  .container1 .logo i {
     font-size: 18px;
     margin-top: 10px;
   }
-  .nav a {
+  .container1 .nav nav a {
     font-size: 18px;
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 8px;
   }
-  section .textHero h2 {
-    font-size: 40px;
+  .textoArriba h2 {
+    font-size: 30px;
   }
-  footer .redes img {
+  .textoArriba ul li {
+    font-size: 14px;
+  }
+  .contenedorAbajo .titulo .tituloAbajo {
+    font-size: 30px;
+  }
+  .contenedorAbajo .imgSkills img {
+    height: 80px;
+    width: 80px;
+  }
+  footer .final {
+    justify-content: center;
+  }
+  footer .final .redes img {
     height: 28px;
     width: 28px;
     margin-left: 10px;
   }
-  footer p {
+  footer .final footer p {
     font-size: 14px;
-  }
-  footer .final {
-    justify-content: center;
   }
 }/*# sourceMappingURL=capacity.css.map */

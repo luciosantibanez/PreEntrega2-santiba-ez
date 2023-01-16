@@ -73,10 +73,10 @@ header{
 }
 
 .container1 .nav a:hover {
-    color: #00ffff;
+    color: $thcolor;
     text-decoration: none;
     font-weight: 400;
-  }
+}
 
 //fin navbar
 
@@ -211,23 +211,29 @@ a img:hover{
     .container1{
         flex-direction: column;
 
-            .logo{
-                h2{
-                    font-size: 24px;
-                margin-top: 15px;
-                }
-                
-                i{
-                    font-size: 18px;
-                    margin-top: 10px;
-                }
+        .logo{
+            h2{
+            font-size: 24px;
+            margin-top: 15px;
+        }
+            i{
+            font-size: 18px;
+            margin-top: 10px;
+        }
+        } 
+
+        .nav{
+            nav{
+                a{
+                font-size: 18px;
+                margin-bottom: 15px;
+                margin-left: 8px;
             }
+            }
+            
+        }
     }
-    .nav a{
-        font-size: 18px;
-        margin-bottom: 15px;
-        margin-left: 5px;
-    }
+
 
     section .textHero h2{ 
         font-size: 40px;
