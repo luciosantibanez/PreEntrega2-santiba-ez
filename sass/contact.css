@@ -62,11 +62,53 @@ header .container1 nav a {
   font-weight: 400;
 }
 
-a img:hover {
-  transform: scale(1.04);
+.sociales {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sociales h3 {
+  font-size: 3rem;
+  font-weight: 1000;
+  color: white;
+  width: auto;
+  height: 3rem;
+  overflow: hidden;
+  -webkit-animation: cascada 0.5s;
+          animation: cascada 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+.sociales .parrafos {
+  margin-left: 15px;
+}
+.sociales p {
+  color: white;
+}
+.sociales p span {
+  -webkit-text-decoration: underline solid white;
+          text-decoration: underline solid white;
+  color: #00ffff;
 }
 
-/* footer */
+@-webkit-keyframes cascada {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -10px;
+  }
+}
+
+@keyframes cascada {
+  0% {
+    margin-top: 0;
+  }
+  50% {
+    margin-top: -10px;
+  }
+}
 footer {
   height: 50px;
   width: 100%;
@@ -104,4 +146,46 @@ footer p {
 }
 footer p span {
   font-size: 30px;
+}
+
+a img:hover {
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .container1 {
+    flex-direction: column;
+  }
+  .container1 .logo h2 {
+    font-size: 24px;
+    margin-top: 15px;
+  }
+  .container1 .logo i {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .container1 .nav a {
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+  }
+  .sociales {
+    flex-direction: column;
+  }
+  .sociales h3 {
+    -webkit-animation-iteration-count: 4;
+            animation-iteration-count: 4;
+    margin-bottom: 30px;
+  }
+  footer .final {
+    justify-content: center;
+  }
+  footer .final p {
+    font-size: 14px;
+  }
+  footer .final .redes img {
+    height: 28px;
+    width: 28px;
+    margin-left: 10px;
+  }
 }/*# sourceMappingURL=contact.css.map */

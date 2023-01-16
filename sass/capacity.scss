@@ -188,7 +188,11 @@ footer{
     }
 }
 
-/* fin footer */
+a img:hover{
+    transform: scale(1.08);
+}
+
+// fin footer
 
 ::-webkit-scrollbar{
     width: 12px;

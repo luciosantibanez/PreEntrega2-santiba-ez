@@ -62,7 +62,6 @@ header .container1 nav a {
   font-weight: 400;
 }
 
-/* main */
 section {
   height: 100vh;
   width: 100%;
@@ -134,34 +133,38 @@ footer p span {
   .container1 {
     flex-direction: column;
   }
-  .logo h2 {
+  .container1 .logo h2 {
     font-size: 24px;
     margin-top: 15px;
   }
-  .logo i {
+  .container1 .logo i {
     font-size: 18px;
     margin-top: 10px;
   }
-  .nav a {
+  .container1 .nav a {
     font-size: 18px;
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 8px;
   }
   section .textHero h2 {
     font-size: 40px;
   }
-  footer .redes img {
+  footer .final {
+    justify-content: center;
+  }
+  footer .final p {
+    font-size: 14px;
+  }
+  footer .final .redes img {
     height: 28px;
     width: 28px;
     margin-left: 10px;
   }
-  footer p {
-    font-size: 14px;
-  }
-  footer .final {
-    justify-content: center;
-  }
 }
+a img:hover {
+  transform: scale(1.08);
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }

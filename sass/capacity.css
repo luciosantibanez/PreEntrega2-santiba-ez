@@ -155,7 +155,10 @@ footer p span {
   font-size: 30px;
 }
 
-/* fin footer */
+a img:hover {
+  transform: scale(1.08);
+}
+
 ::-webkit-scrollbar {
   width: 12px;
 }

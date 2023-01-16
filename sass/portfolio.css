@@ -71,8 +71,7 @@ header .container1 nav a {
   font-family: monospace;
   color: white;
 }
-
-.card {
+.containers .card {
   height: 400px;
   width: 400px;
   margin: 20px;
@@ -84,30 +83,48 @@ header .container1 nav a {
   cursor: default;
   transition: all 400ms ease;
 }
-
-.card:hover {
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-  transition: 0.2s;
-  transform: translateY(-3%);
+.containers .card .duro h3 {
+  font-family: "Anton", sans-serif;
 }
-
-.portfolio {
+.containers .card .port h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+.containers .card .port h3 span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #00ffff;
+}
+.containers .card .mycv h3 {
+  font-family: "Fredoka One", cursive;
+  color: rgb(223, 192, 152);
+}
+.containers .card .contenido {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.containers .card .contenido a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(255, 255, 255);
+  font-size: 1.4em;
+  transition: all 400ms ease;
+}
+.containers .card .portfolio {
   width: 100%;
   height: 500px;
   background-image: url(../img/portfolio.jpg);
   background-position: center;
   background-size: cover;
 }
-
-.durocret {
+.containers .card .durocret {
   width: 100%;
   height: 500px;
   background-image: url(../img//hero\ y\ header.png);
   background-position: center;
   background-size: cover;
 }
-
-.cv {
+.containers .card .cv {
   background-image: url(../img/cv\ lucio\ img.png);
   background-position: top;
   background-size: cover;
@@ -115,37 +132,10 @@ header .container1 nav a {
   height: 500px;
 }
 
-.card .contenido {
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.card .contenido a {
-  text-decoration: none;
-  padding: 20px;
-  color: rgb(255, 255, 255);
-  font-size: 1.4em;
-  transition: all 400ms ease;
-}
-
-.card .duro h3 {
-  font-family: "Anton", sans-serif;
-}
-
-.card .port h3 {
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-
-.card .port h3 span {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  color: #00ffff;
-}
-
-.card .mycv h3 {
-  font-family: "Fredoka One", cursive;
-  color: rgb(223, 192, 152);
+.card:hover {
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  transform: translateY(-3%);
 }
 
 .card .contenido a i:hover {
@@ -154,18 +144,6 @@ header .container1 nav a {
   transform: scale(1.1);
 }
 
-a img {
-  height: 10%;
-  width: 15%;
-}
-
-a img:hover {
-  transform: scale(1.03);
-  cursor: default;
-  transition: 0.4s;
-}
-
-/* footer */
 footer {
   height: 50px;
   width: 100%;
@@ -205,36 +183,61 @@ footer p span {
   font-size: 30px;
 }
 
-/* media querys */
+a img:hover {
+  transform: scale(1.08);
+}
+
 @media (max-width: 768px) {
   .container1 {
     flex-direction: column;
   }
-  .logo h2 {
+  .container1 .logo h2 {
     font-size: 24px;
     margin-top: 15px;
   }
-  .logo i {
+  .container1 .logo i {
     font-size: 18px;
     margin-top: 10px;
   }
-  .nav a {
+  .container1 .nav a {
     font-size: 18px;
     margin-bottom: 15px;
-    margin-left: 5px;
+    margin-left: 8px;
   }
-  section .textHero h2 {
-    font-size: 40px;
+  .containers {
+    flex-direction: column;
   }
-  footer .redes img {
-    height: 28px;
-    width: 28px;
-    margin-left: 10px;
+  .containers .card {
+    margin: 3px;
+    height: 200px;
+    width: 340px;
   }
-  footer p {
-    font-size: 14px;
+  .containers .card figure {
+    margin-bottom: 4px;
+  }
+  .containers .card .contenido {
+    margin-bottom: 5px;
+  }
+  .containers .card .contenido h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+  }
+  .containers .card .contenido a {
+    padding: 5px;
+  }
+  .containers .card .contenido i {
+    font-size: 20px;
+    padding: 1px;
   }
   footer .final {
     justify-content: center;
+  }
+  footer .final p {
+    font-size: 14px;
+  }
+  footer .final .redes img {
+    height: 28px;
+    width: 28px;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=portfolio.css.map */
