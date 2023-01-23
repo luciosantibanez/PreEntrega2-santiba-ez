@@ -267,11 +267,15 @@ a img:hover{
     }
     .containers{
         flex-direction: column;
+        min-height: 110vh;
+        padding-bottom: 50px;
+        
     
         .card{
         margin: 3px;
         height: 200px;
         width: 340px;
+            
 
             figure{
                 margin-bottom: 4px;
